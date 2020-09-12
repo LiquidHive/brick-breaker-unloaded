@@ -1,0 +1,141 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/materials/dialog_box.tres" type="Material" id=1]
+[ext_resource path="res://assets/themes/costarica_52.theme" type="Theme" id=2]
+[ext_resource path="res://scripts/redeem_code.gd" type="Script" id=3]
+
+[node name="RedeemCode" type="Panel"]
+
+material = ExtResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 144.0
+margin_top = 128.0
+margin_right = 1136.0
+margin_bottom = 592.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 2 )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Material" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 976.0
+margin_bottom = 448.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Username" type="Label" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 40.0
+margin_right = 992.0
+margin_bottom = 120.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "KEY_REDEEM_CODE"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 32.0
+margin_top = 128.0
+margin_right = 960.0
+margin_bottom = 208.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0.626381, 0.305923, 0.636719, 1 )
+text = "LiquidHive"
+align = 1
+max_length = 32
+expand_to_len = false
+focus_mode = 2
+placeholder_alpha = 1.0
+caret_blink = true
+caret_blink_speed = 0.65
+
+[node name="Valid" type="Label" parent="."]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 240.0
+margin_right = 1000.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_colors/font_color = Color( 0.800781, 0.328445, 0.328445, 1 )
+text = "Please Enter A Valid Username."
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Confirm" type="Button" parent="."]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 160.0
+margin_top = 336.0
+margin_right = 832.0
+margin_bottom = 416.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "KEY_CONFIRM"
+flat = false
+_sections_unfolded = [ "Rect" ]
+
+

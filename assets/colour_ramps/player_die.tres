@@ -1,0 +1,7 @@
+[gd_resource type="ColorRamp" load_steps=1 format=2]
+
+
+[resource]
+
+offsets=PoolFloatArray( 0, 0.468966, 1 )
+colors=PoolColorArray( 0, 0, 0, 0, 0.742188, 0.318909, 0.318909, 1, 0.705456, 0.789063, 0.120209, 1 )

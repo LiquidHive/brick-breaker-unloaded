@@ -1,0 +1,266 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/buffs.gd" type="Script" id=1]
+[ext_resource path="res://assets/graphics/items/balls/default_ball.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+radius = 57.2572
+
+[node name="Buffs" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Life" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Life"]
+margin_left = -32.0
+margin_top = -8.0
+margin_right = 32.0
+margin_bottom = 7.99999
+color = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Life"]
+margin_left = 8.0
+margin_top = -32.0
+margin_right = 72.0
+margin_bottom = -16.0
+rect_rotation = 90.0
+color = Color( 1, 0, 0, 1 )
+
+[node name="Slow" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+
+[node name="Sprite22" type="Sprite" parent="Slow"]
+position = Vector2( -20.9846, 0 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="Sprite222" type="Sprite" parent="Slow"]
+position = Vector2( -6.59517, 0 )
+scale = Vector2( 0.235468, 0.235468 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2222" type="Sprite" parent="Slow"]
+position = Vector2( 9.29319, 0 )
+scale = Vector2( 0.20866, 0.20866 )
+texture = ExtResource( 2 )
+
+[node name="Sprite22222" type="Sprite" parent="Slow"]
+position = Vector2( 27.28, 0 )
+scale = Vector2( 0.172365, 0.172365 )
+texture = ExtResource( 2 )
+
+[node name="Fast" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+position = Vector2( 20.1245, 0 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Sprite22" type="Sprite" parent="Fast"]
+rotation = -7.10543e-015
+texture = ExtResource( 2 )
+
+[node name="Sprite222" type="Sprite" parent="Fast"]
+position = Vector2( -47.9649, 4.19322e-006 )
+scale = Vector2( 0.784892, 0.784892 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2222" type="Sprite" parent="Fast"]
+position = Vector2( -100.926, 8.82324e-006 )
+scale = Vector2( 0.695533, 0.695533 )
+texture = ExtResource( 2 )
+
+[node name="Sprite22222" type="Sprite" parent="Fast"]
+position = Vector2( -160.882, 1.40648e-005 )
+scale = Vector2( 0.57455, 0.57455 )
+texture = ExtResource( 2 )
+
+[node name="ShortPad" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="ShortPad"]
+margin_left = -24.0
+margin_top = -8.0
+margin_right = 24.0
+margin_bottom = 8.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="LeftArrow" type="Node2D" parent="ShortPad"]
+editor/display_folded = true
+
+[node name="ColorRect32" type="ColorRect" parent="ShortPad/LeftArrow"]
+margin_left = -30.5805
+margin_top = 4.92394
+margin_right = 2.41947
+margin_bottom = 11.9239
+rect_rotation = 225.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="ColorRect22" type="ColorRect" parent="ShortPad/LeftArrow"]
+margin_left = -30.5805
+margin_top = 4.92394
+margin_right = -4.58053
+margin_bottom = 11.9239
+rect_rotation = 135.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="RightArrow" type="Node2D" parent="ShortPad"]
+editor/display_folded = true
+
+[node name="ColorRect2" type="ColorRect" parent="ShortPad/RightArrow"]
+margin_left = 30.3274
+margin_top = -5.0
+margin_right = 56.3274
+margin_bottom = 2.0
+rect_rotation = -45.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="ShortPad/RightArrow"]
+margin_left = 30.3274
+margin_top = -5.0
+margin_right = 63.3274
+margin_bottom = 2.0
+rect_rotation = 45.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="LongPad" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="LongPad"]
+margin_left = -32.0
+margin_top = -8.0
+margin_right = 32.0
+margin_bottom = 7.99999
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="LeftArrow" type="Node2D" parent="LongPad"]
+editor/display_folded = true
+
+[node name="ColorRect2" type="ColorRect" parent="LongPad/LeftArrow"]
+margin_left = -51.6125
+margin_top = -5.0
+margin_right = -25.6125
+margin_bottom = 2.0
+rect_rotation = -45.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="LongPad/LeftArrow"]
+margin_left = -51.6125
+margin_top = -5.0
+margin_right = -18.6125
+margin_bottom = 2.0
+rect_rotation = 45.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="RightArrow" type="Node2D" parent="LongPad"]
+editor/display_folded = true
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="ColorRect2" type="ColorRect" parent="LongPad/RightArrow"]
+margin_left = -52.0
+margin_top = -5.0
+margin_right = -26.0
+margin_bottom = 2.0
+rect_rotation = -45.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="LongPad/RightArrow"]
+margin_left = -52.0
+margin_top = -5.0
+margin_right = -19.0
+margin_bottom = 2.0
+rect_rotation = 45.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="Laser" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+scale = Vector2( 0.87, 0.6 )
+
+[node name="Laser" type="Node2D" parent="Laser"]
+editor/display_folded = true
+
+[node name="ColorRect" type="ColorRect" parent="Laser/Laser"]
+margin_left = 46.0
+margin_top = -19.0
+margin_right = 54.0
+margin_bottom = -15.0
+
+[node name="ColorRect3" type="ColorRect" parent="Laser/Laser"]
+margin_left = -54.0
+margin_top = -19.0
+margin_right = -46.0
+margin_bottom = -15.0
+
+[node name="ColorRect2" type="ColorRect" parent="Laser/Laser"]
+margin_left = 48.0
+margin_top = -21.0
+margin_right = 52.0
+margin_bottom = -19.0
+color = Color( 1, 1, 0, 1 )
+
+[node name="ColorRect22" type="ColorRect" parent="Laser/Laser"]
+margin_left = -52.0
+margin_top = -21.0
+margin_right = -48.0
+margin_bottom = -19.0
+color = Color( 1, 1, 0, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Laser"]
+margin_left = -30.0
+margin_top = -16.0
+margin_right = 30.0
+margin_bottom = 16.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="Normal" type="Node2D" parent="Laser"]
+editor/display_folded = true
+
+[node name="ColorRectLeft" type="ColorRect" parent="Laser/Normal"]
+margin_left = -64.0
+margin_top = -16.0
+margin_right = -30.0
+margin_bottom = 16.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="ColorRectRight" type="ColorRect" parent="Laser/Normal"]
+margin_left = 30.0
+margin_top = -16.0
+margin_right = 64.0
+margin_bottom = 16.0
+color = Color( 0.219608, 0.219608, 0.552941, 1 )
+
+[node name="MultiBalls" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
+
+[node name="Sprite" type="Sprite" parent="MultiBalls"]
+position = Vector2( 0, -20.8 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="MultiBalls"]
+position = Vector2( 23.475, 14.2344 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="Sprite22" type="Sprite" parent="MultiBalls"]
+position = Vector2( -21.6398, 14.2344 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+

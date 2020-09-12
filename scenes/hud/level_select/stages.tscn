@@ -1,0 +1,416 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/themes/costarica_52.theme" type="Theme" id=1]
+[ext_resource path="res://assets/fonts/costarica_86.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/svgs/hud/icons/lock_large.svg" type="Texture" id=3]
+[ext_resource path="res://scenes/hud/selector.tscn" type="PackedScene" id=4]
+
+[node name="Stages" type="Container" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 48.0
+margin_bottom = 48.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="." index="0"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_top = 48.0
+margin_right = 1232.0
+margin_bottom = 144.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.85098, 0.862745, 0.196078, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_constants/shadow_as_outline = 4
+text = "Sub Title"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Stage 1" type="Button" parent="." index="1"]
+
+editor/display_folded = true
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 176.0
+margin_right = 432.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Stage 1" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 384.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "STAGE_1"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Stage 1" index="1"]
+
+visible = false
+scale = Vector2( 0.938875, 0.941176 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Stage 2" type="Button" parent="." index="2"]
+
+editor/display_folded = true
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 176.0
+margin_right = 832.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Stage 2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 384.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "STAGE_2"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Stage 2" index="1"]
+
+visible = false
+scale = Vector2( 0.938875, 0.941176 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Stage 3" type="Button" parent="." index="3"]
+
+editor/display_folded = true
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 848.0
+margin_top = 176.0
+margin_right = 1232.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Stage 3" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 368.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "STAGE_3"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Stage 3" index="1"]
+
+visible = false
+scale = Vector2( 0.938875, 0.941176 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Stage 4" type="Button" parent="." index="4"]
+
+editor/display_folded = true
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 48.0
+margin_top = 368.0
+margin_right = 432.0
+margin_bottom = 544.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = false
+align = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Stage 4" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 384.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "STAGE_4"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Stage 4" index="1"]
+
+visible = false
+scale = Vector2( 0.938875, 0.941176 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Stage 5" type="Button" parent="." index="5"]
+
+editor/display_folded = true
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 368.0
+margin_right = 832.0
+margin_bottom = 544.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = false
+align = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Stage 5" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 384.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "STAGE_5"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Stage 5" index="1"]
+
+visible = false
+scale = Vector2( 0.938875, 0.941176 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Extra" type="Button" parent="." index="6"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 848.0
+margin_top = 368.0
+margin_right = 1232.0
+margin_bottom = 544.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = false
+align = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Extra" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 368.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "STRING_EXTRA"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="Extra" index="1"]
+
+visible = false
+scale = Vector2( 0.938875, 0.941176 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Back" type="Button" parent="." index="7"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 304.0
+margin_top = 592.0
+margin_right = 976.0
+margin_bottom = 672.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "KEY_BACK"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Position2D" type="Position2D" parent="." index="8"]
+
+position = Vector2( 640, 360 )
+scale = Vector2( 64, 36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Selector" parent="." index="9" instance=ExtResource( 4 )]
+
+

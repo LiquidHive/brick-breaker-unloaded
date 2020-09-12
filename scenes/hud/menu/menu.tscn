@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/themes/costarica_52.theme" type="Theme" id=1]
+[ext_resource path="res://scripts/menu.gd" type="Script" id=2]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.10352e-005
+margin_top = 6.10352e-005
+margin_right = 6.10352e-005
+margin_bottom = 6.10352e-005
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Start" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 304.0
+margin_right = 704.0
+margin_bottom = 416.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+text = "KEY_START"
+
+[node name="Customization" type="Button" parent="."]
+margin_left = 15.9999
+margin_top = 432.0
+margin_right = 704.0
+margin_bottom = 544.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+text = "KEY_CUSTOMISE"
+
+[node name="Options" type="Button" parent="."]
+margin_left = 15.9999
+margin_top = 560.0
+margin_right = 704.0
+margin_bottom = 672.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+text = "KEY_SETTINGS"
+
+[node name="Help" type="Button" parent="."]
+margin_left = 15.9999
+margin_top = 688.0
+margin_right = 704.0
+margin_bottom = 800.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+text = "KEY_HELP"
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 15.9999
+margin_top = 816.0
+margin_right = 704.0
+margin_bottom = 928.0
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+text = "KEY_QUIT"
+

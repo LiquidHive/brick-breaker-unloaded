@@ -1,0 +1,246 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://scripts/main.gd" type="Script" id=1]
+[ext_resource path="res://assets/graphics/backgrounds/background.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/costa_rica.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/fonts/costarica_64.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scenes/hud/language.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/hud/menu/menu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/hud/menu/settings.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/hud/menu/help.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scripts/completed_game.gd" type="Script" id=9]
+[ext_resource path="res://assets/materials/dialog_box.tres" type="Material" id=10]
+[ext_resource path="res://assets/themes/costarica_52.theme" type="Theme" id=11]
+[ext_resource path="res://scripts/exit.gd" type="Script" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 68
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+use_mipmaps = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 48
+use_mipmaps = true
+font_data = ExtResource( 3 )
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 144.0, 40.0, 244.0, 641.213, 284.0, 528.0 ],
+"_edit_vertical_guides_": [ 360.617 ]
+}
+game_version_num = "0.1.2"
+
+[node name="UI" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Sprite" parent="UI"]
+position = Vector2( 720, 6.10352e-05 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Title" type="Label" parent="UI"]
+anchor_right = 1.0
+margin_top = 40.0
+margin_right = 680.0
+margin_bottom = 144.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.85098, 0.862745, 0.196078, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_constants/shadow_as_outline = 4
+text = "brick breaker unloaded"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SubTitle" type="Label" parent="UI"]
+anchor_right = 1.0
+margin_top = 160.0
+margin_right = 680.0
+margin_bottom = 244.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_constants/shadow_as_outline = 4
+text = "KEY_MENU"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Language" parent="UI" instance=ExtResource( 5 )]
+visible = false
+
+[node name="Main" parent="UI" instance=ExtResource( 6 )]
+
+[node name="Customization" parent="UI/Main" index="1"]
+visible = false
+
+[node name="Options" parent="UI/Main" index="2"]
+margin_top = 432.0
+margin_bottom = 544.0
+
+[node name="Help" parent="UI/Main" index="3"]
+margin_top = 560.0
+margin_bottom = 672.0
+
+[node name="Exit" parent="UI/Main" index="4"]
+margin_top = 688.0
+margin_bottom = 800.0
+
+[node name="Settings" parent="UI" instance=ExtResource( 7 )]
+
+[node name="Help" parent="UI" instance=ExtResource( 8 )]
+
+[node name="CompletedGame" type="Control" parent="UI"]
+visible = false
+margin_right = 1280.0
+margin_bottom = 720.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="UI/CompletedGame"]
+margin_right = 720.0
+margin_bottom = 1280.0
+custom_fonts/font = SubResource( 2 )
+text = "Congatulations
+You Have Completeted The Game
+
+Thank You For Playing
+Brick Breaker Unloaded"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Tap" type="Label" parent="UI/CompletedGame"]
+margin_left = 6.10352e-05
+margin_top = 1088.0
+margin_right = 720.0
+margin_bottom = 1169.0
+custom_fonts/font = SubResource( 3 )
+text = "Tap To Continue"
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="TextureButton" type="TextureButton" parent="UI/CompletedGame"]
+margin_right = 720.0
+margin_bottom = 1280.0
+
+[node name="Position2D" type="Position2D" parent="UI/CompletedGame"]
+position = Vector2( 640, 360 )
+scale = Vector2( 64, 36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Exit" type="Panel" parent="UI"]
+visible = false
+material = ExtResource( 10 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 352.0
+margin_right = 664.0
+margin_bottom = 776.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 11 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="UI/Exit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -16.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Exit Title" type="Label" parent="UI/Exit"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 680.0
+margin_bottom = 128.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+theme = ExtResource( 11 )
+text = "KEY_EXIT"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Yes" type="Button" parent="UI/Exit"]
+margin_left = 32.0
+margin_top = 176.0
+margin_right = 656.0
+margin_bottom = 288.0
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_YES"
+
+[node name="No" type="Button" parent="UI/Exit"]
+margin_left = 32.0
+margin_top = 304.0
+margin_right = 656.0
+margin_bottom = 416.0
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_NO"
+
+[node name="Position2D" type="Position2D" parent="UI/Exit"]
+position = Vector2( 496, 232 )
+scale = Vector2( 64, 36 )
+
+[node name="Position2D 2" type="Position2D" parent="UI/Exit"]
+position = Vector2( 1064, 528 )
+scale = Vector2( 7.2, 6.4 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[editable path="UI/Main"]
+
+[editable path="UI/Settings"]
+
+[editable path="UI/Help"]

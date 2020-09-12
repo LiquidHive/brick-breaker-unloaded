@@ -1,0 +1,133 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/ads.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/costarica_42.tres" type="DynamicFont" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="0"]
+
+layer = 0
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="BtnBanner" type="Button" parent="CanvasLayer" index="0"]
+
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1248.0
+margin_top = -688.0
+margin_right = -896.0
+margin_bottom = -576.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Show/Hide Banner"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin", "custom_fonts" ]
+
+[node name="BtnInterstitial" type="Button" parent="CanvasLayer" index="1"]
+
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1248.0
+margin_top = -544.0
+margin_right = -896.0
+margin_bottom = -432.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Show Interstitial"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin", "custom_fonts" ]
+
+[node name="BtnRewardedVideo" type="Button" parent="CanvasLayer" index="2"]
+
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1248.0
+margin_top = -400.0
+margin_right = -833.0
+margin_bottom = -288.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Show Rewarded Video"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin", "custom_fonts" ]
+
+[node name="LblRewarded" type="Label" parent="CanvasLayer" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 464.0
+margin_top = 320.0
+margin_right = 1264.0
+margin_bottom = 432.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 2 )
+text = "REWARDED VIDEO RETURN"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[connection signal="toggled" from="CanvasLayer/BtnBanner" to="." method="_on_BtnBanner_toggled"]
+
+[connection signal="pressed" from="CanvasLayer/BtnInterstitial" to="." method="_on_BtnInterstitial_pressed"]
+
+[connection signal="pressed" from="CanvasLayer/BtnRewardedVideo" to="." method="_on_BtnRewardedVideo_pressed"]
+
+

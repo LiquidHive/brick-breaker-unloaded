@@ -1,0 +1,332 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/selector.gd" type="Script" id=1]
+[ext_resource path="res://assets/graphics/hud/buttons/selector.png" type="Texture" id=2]
+[ext_resource path="res://assets/graphics/hud/buttons/selector_large.png" type="Texture" id=3]
+[ext_resource path="res://assets/graphics/hud/buttons/selector_medium.png" type="Texture" id=4]
+[ext_resource path="res://assets/graphics/hud/buttons/selector_text.png" type="Texture" id=5]
+[ext_resource path="res://assets/graphics/hud/buttons/selector_small.png" type="Texture" id=6]
+[ext_resource path="res://assets/graphics/hud/buttons/selector_level.png" type="Texture" id=7]
+[ext_resource path="res://assets/graphics/hud/buttons/selector_toggle.png" type="Texture" id=8]
+
+[node name="Selector" type="CanvasLayer"]
+pause_mode = 2
+layer = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 64, 36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Main" type="Node" parent="."]
+editor/display_folded = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="SelectorBox" type="Sprite" parent="Main"]
+visible = false
+position = Vector2( 640, 152 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Main"]
+visible = false
+position = Vector2( 640, 248 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 3" type="Sprite" parent="Main"]
+visible = false
+position = Vector2( 640, 344 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 4" type="Sprite" parent="Main"]
+visible = false
+position = Vector2( 640, 440 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 5" type="Sprite" parent="Main"]
+visible = false
+position = Vector2( 640, 536 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 6" type="Sprite" parent="Main"]
+visible = false
+position = Vector2( 640, 632 )
+texture = ExtResource( 2 )
+
+[node name="Select" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="SelectorBox" type="Sprite" parent="Select"]
+visible = false
+position = Vector2( 640, 264 )
+texture = ExtResource( 3 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Select"]
+visible = false
+position = Vector2( 640, 456 )
+texture = ExtResource( 3 )
+
+[node name="SelectorBox 3" type="Sprite" parent="Select"]
+visible = false
+position = Vector2( 640, 632 )
+texture = ExtResource( 2 )
+
+[node name="Medium" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="SelectorBox" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 240, 264 )
+texture = ExtResource( 4 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 640, 264 )
+texture = ExtResource( 4 )
+
+[node name="SelectorBox 3" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 1040, 264 )
+texture = ExtResource( 4 )
+
+[node name="SelectorBox 4" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 240, 456 )
+texture = ExtResource( 4 )
+
+[node name="SelectorBox 5" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 640, 456 )
+texture = ExtResource( 4 )
+
+[node name="SelectorBox 6" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 1040, 456 )
+texture = ExtResource( 4 )
+
+[node name="SelectorBox 7" type="Sprite" parent="Medium"]
+visible = false
+position = Vector2( 640, 632 )
+texture = ExtResource( 2 )
+
+[node name="Wide" type="Node" parent="."]
+editor/display_folded = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="SelectorBoxText" type="Sprite" parent="Wide"]
+visible = false
+position = Vector2( 640, 296 )
+texture = ExtResource( 5 )
+
+[node name="SelectorBox" type="Sprite" parent="Wide"]
+visible = false
+position = Vector2( 640, 504 )
+texture = ExtResource( 2 )
+
+[node name="Exit" type="Node" parent="."]
+editor/display_folded = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="SelectorBox" type="Sprite" parent="Exit"]
+visible = false
+position = Vector2( 456, 440 )
+texture = ExtResource( 6 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Exit"]
+visible = false
+position = Vector2( 824, 440 )
+texture = ExtResource( 6 )
+
+[node name="Level" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="SelectorBox" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 160, 256 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 400, 256 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 3" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 640, 256 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 4" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 880, 256 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 5" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 1120, 256 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 6" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 160, 464 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 7" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 400, 464 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 8" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 640, 464 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 9" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 880, 464 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 10" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 1120, 464 )
+texture = ExtResource( 7 )
+
+[node name="SelectorBox 11" type="Sprite" parent="Level"]
+visible = false
+position = Vector2( 640, 632 )
+texture = ExtResource( 2 )
+
+[node name="MiniSettings" type="Node" parent="."]
+editor/display_folded = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="SelectorBox" type="Sprite" parent="MiniSettings"]
+visible = false
+position = Vector2( 640, 152 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 2" type="Sprite" parent="MiniSettings"]
+visible = false
+position = Vector2( 640, 264 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 3" type="Sprite" parent="MiniSettings"]
+visible = false
+position = Vector2( 640, 360 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 4" type="Sprite" parent="MiniSettings"]
+visible = false
+position = Vector2( 640, 456 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 5" type="Sprite" parent="MiniSettings"]
+visible = false
+position = Vector2( 640, 536 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 6" type="Sprite" parent="MiniSettings"]
+visible = false
+position = Vector2( 640, 632 )
+texture = ExtResource( 2 )
+
+[node name="EditControl" type="Node" parent="."]
+editor/display_folded = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="SelectorBox" type="Sprite" parent="EditControl"]
+visible = false
+position = Vector2( 72, 72 )
+texture = ExtResource( 8 )
+
+[node name="SelectorBox 2" type="Sprite" parent="EditControl"]
+visible = false
+position = Vector2( 640, 264 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 3" type="Sprite" parent="EditControl"]
+visible = false
+position = Vector2( 640, 360 )
+texture = ExtResource( 2 )
+
+[node name="SelectorBox 4" type="Sprite" parent="EditControl"]
+visible = false
+position = Vector2( 640, 456 )
+texture = ExtResource( 2 )
+
+[node name="Completed" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="SelectorBox" type="Sprite" parent="Completed"]
+visible = false
+position = Vector2( 452, 456 )
+scale = Vector2( 1.02273, 1 )
+texture = ExtResource( 6 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Completed"]
+visible = false
+position = Vector2( 828, 456 )
+scale = Vector2( 1.02273, 1 )
+texture = ExtResource( 6 )
+
+[node name="SelectorBox 3" type="Sprite" parent="Completed"]
+visible = false
+position = Vector2( 640, 552 )
+scale = Vector2( 1.04545, 1 )
+texture = ExtResource( 6 )
+
+[node name="HowToPlay" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="SelectorBox" type="Sprite" parent="HowToPlay"]
+visible = false
+position = Vector2( 216, 456 )
+scale = Vector2( 1.02273, 1 )
+texture = ExtResource( 6 )
+
+[node name="SelectorBox 2" type="Sprite" parent="HowToPlay"]
+visible = false
+position = Vector2( 1064, 456 )
+scale = Vector2( 1.02273, 1 )
+texture = ExtResource( 6 )
+
+[node name="Confirm" type="Node" parent="."]
+editor/display_folded = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="SelectorBox" type="Sprite" parent="Confirm"]
+visible = false
+position = Vector2( 456, 424 )
+texture = ExtResource( 6 )
+
+[node name="SelectorBox 2" type="Sprite" parent="Confirm"]
+visible = false
+position = Vector2( 824, 424 )
+texture = ExtResource( 6 )
+
+[node name="Time" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+

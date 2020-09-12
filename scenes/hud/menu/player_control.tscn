@@ -1,0 +1,451 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/touch_pad.gd" type="Script" id=1]
+[ext_resource path="res://assets/graphics/hud/buttons/move_button.png" type="Texture" id=2]
+[ext_resource path="res://assets/graphics/hud/buttons/touch_jump_button.png" type="Texture" id=3]
+
+[node name="OnScreenButtons" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Buttons" type="Node2D" parent="." index="0"]
+
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="LeftTouchPad" type="Node2D" parent="Buttons" index="0"]
+
+editor/display_folded = true
+position = Vector2( 240, 624 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Buttons/LeftTouchPad" index="0"]
+
+modulate = Color( 1, 1, 1, 0.439216 )
+position = Vector2( 16, -16 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="LeftSide" type="Node2D" parent="Buttons/LeftTouchPad" index="1"]
+
+editor/display_folded = true
+position = Vector2( 16, -16 )
+
+[node name="SmallTopLeft" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="0"]
+
+position = Vector2( -224, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomLeft" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="1"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallCentre" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="2"]
+
+position = Vector2( -16, 16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="SmallTopRight" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="3"]
+
+position = Vector2( 192, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomRight" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="4"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumTopLeft" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="5"]
+
+position = Vector2( -224, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomLeft" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="6"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumCentre" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="7"]
+
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MediumTopRight" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="8"]
+
+position = Vector2( 224, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomRight" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="9"]
+
+position = Vector2( 224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopLeft" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="10"]
+
+position = Vector2( -224, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeBottomLeft" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="11"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeCentre" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="12"]
+
+position = Vector2( 16, -16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LargeBottomRight" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="13"]
+
+position = Vector2( 256, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopRight" type="Position2D" parent="Buttons/LeftTouchPad/LeftSide" index="14"]
+
+position = Vector2( 256, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="RightSide" type="Node2D" parent="Buttons/LeftTouchPad" index="2"]
+
+editor/display_folded = true
+position = Vector2( 16, -16 )
+
+[node name="SmallTopLeft" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="0"]
+
+position = Vector2( -224, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomLeft" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="1"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallCentre" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="2"]
+
+position = Vector2( -16, 16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="SmallTopRight" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="3"]
+
+position = Vector2( 192, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomRight" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="4"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumTopLeft" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="5"]
+
+position = Vector2( -256, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomLeft" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="6"]
+
+position = Vector2( -256, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumCentre" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="7"]
+
+position = Vector2( -32, 0 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MediumTopRight" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="8"]
+
+position = Vector2( 192, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomRight" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="9"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopLeft" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="10"]
+
+position = Vector2( -288, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeBottomLeft" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="11"]
+
+position = Vector2( -288, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeCentre" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="12"]
+
+position = Vector2( -48, -16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LargeBottomRight" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="13"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopRight" type="Position2D" parent="Buttons/LeftTouchPad/RightSide" index="14"]
+
+position = Vector2( 192, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="RightTouchPad" type="Node2D" parent="Buttons" index="1"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 1008, 624 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Buttons/RightTouchPad" index="0"]
+
+modulate = Color( 1, 1, 1, 0.439216 )
+position = Vector2( 16, -16 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="LeftSide" type="Node2D" parent="Buttons/RightTouchPad" index="1"]
+
+editor/display_folded = true
+position = Vector2( 16, -16 )
+
+[node name="SmallTopLeft" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="0"]
+
+position = Vector2( -224, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomLeft" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="1"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallCentre" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="2"]
+
+position = Vector2( -16, 16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="SmallTopRight" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="3"]
+
+position = Vector2( 192, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomRight" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="4"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumTopLeft" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="5"]
+
+position = Vector2( -224, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomLeft" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="6"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumCentre" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="7"]
+
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MediumTopRight" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="8"]
+
+position = Vector2( 224, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomRight" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="9"]
+
+position = Vector2( 224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopLeft" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="10"]
+
+position = Vector2( -224, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeBottomLeft" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="11"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeCentre" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="12"]
+
+position = Vector2( 16, -16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LargeBottomRight" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="13"]
+
+position = Vector2( 256, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopRight" type="Position2D" parent="Buttons/RightTouchPad/LeftSide" index="14"]
+
+position = Vector2( 256, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="RightSide" type="Node2D" parent="Buttons/RightTouchPad" index="2"]
+
+editor/display_folded = true
+position = Vector2( 16, -16 )
+
+[node name="SmallTopLeft" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="0"]
+
+position = Vector2( -224, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomLeft" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="1"]
+
+position = Vector2( -224, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallCentre" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="2"]
+
+position = Vector2( -16, 16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="SmallTopRight" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="3"]
+
+position = Vector2( 192, -32 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="SmallBottomRight" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="4"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumTopLeft" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="5"]
+
+position = Vector2( -256, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomLeft" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="6"]
+
+position = Vector2( -256, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumCentre" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="7"]
+
+position = Vector2( -32, 0 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MediumTopRight" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="8"]
+
+position = Vector2( 192, -64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="MediumBottomRight" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="9"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopLeft" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="10"]
+
+position = Vector2( -288, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeBottomLeft" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="11"]
+
+position = Vector2( -288, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeCentre" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="12"]
+
+position = Vector2( -48, -16 )
+scale = Vector2( 3.2, 3.2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LargeBottomRight" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="13"]
+
+position = Vector2( 192, 64 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LargeTopRight" type="Position2D" parent="Buttons/RightTouchPad/RightSide" index="14"]
+
+position = Vector2( 192, -96 )
+scale = Vector2( 3.2, 3.2 )
+
+[node name="LeftJumpButton" type="TouchScreenButton" parent="Buttons" index="2"]
+
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RightJumpButton" type="TouchScreenButton" parent="Buttons" index="3"]
+
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 640, 0 )
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform", "Visibility" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Centre" type="Position2D" parent="." index="1"]
+
+position = Vector2( 640, 360 )
+scale = Vector2( 64, 36 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TopLeft" type="Position2D" parent="." index="2"]
+
+position = Vector2( 6.10352e-05, 6.10352e-05 )
+scale = Vector2( 1.6, 1.6 )
+
+[node name="BottomLeft" type="Position2D" parent="." index="3"]
+
+position = Vector2( 6.10352e-05, 720 )
+scale = Vector2( 1.6, 1.6 )
+
+[node name="TopRight" type="Position2D" parent="." index="4"]
+
+position = Vector2( 1280, 6.10352e-05 )
+scale = Vector2( 1.6, 1.6 )
+
+[node name="BottomRight" type="Position2D" parent="." index="5"]
+
+position = Vector2( 1280, 720 )
+scale = Vector2( 1.6, 1.6 )
+
+

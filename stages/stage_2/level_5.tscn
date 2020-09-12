@@ -1,0 +1,251 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/level_manager.gd" type="Script" id=1]
+[ext_resource path="res://assets/graphics/backgrounds/background.png" type="Texture" id=2]
+[ext_resource path="res://scenes/items/frames/default_frame.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/items/bricks/normal_brick.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/items/paddles/normal_paddle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/hud/in_game/pause_menu.tscn" type="PackedScene" id=6]
+
+[node name="Stage2Level5" type="Node"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 640.0, 1239.78, 136.666, 1264.0, 112.0, 1139.2, 1164.8, 1152.0, 456.0 ],
+"_edit_vertical_guides_": [ 360.0, 679.333, 40.0, 16.0, 704.0, 110.0, 270.0, 300.0, 420.0, 696.0, 468.0, 206.0, 208.0 ]
+}
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 720, 0 )
+rotation = 1.5708
+texture = ExtResource( 2 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Game" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Frame" parent="Game" instance=ExtResource( 3 )]
+margin_left = 12.0
+margin_top = 192.0
+margin_right = 704.0
+margin_bottom = 1356.0
+
+[node name="Bricks" type="Node2D" parent="Game"]
+editor/display_folded = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NormalBrick5 5" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 464 )
+solid = true
+
+[node name="NormalBrick5 6" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 464 )
+solid = true
+
+[node name="NormalBrick5 14" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 420 )
+
+[node name="NormalBrick5 20" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 420 )
+
+[node name="NormalBrick5 15" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 376 )
+
+[node name="NormalBrick5 21" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 376 )
+
+[node name="NormalBrick5 26" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 332 )
+
+[node name="NormalBrick5 41" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 332 )
+
+[node name="NormalBrick5 27" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 288 )
+
+[node name="NormalBrick5 42" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 288 )
+
+[node name="NormalBrick5 28" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 244 )
+
+[node name="NormalBrick5 29" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 244 )
+
+[node name="NormalBrick5 30" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 464 )
+solid = true
+
+[node name="NormalBrick5 40" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 464 )
+solid = true
+
+[node name="NormalBrick5 31" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 420 )
+
+[node name="NormalBrick5 43" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 420 )
+
+[node name="NormalBrick5 48" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 684 )
+
+[node name="NormalBrick5 58" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 684 )
+
+[node name="NormalBrick5 62" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 684 )
+
+[node name="NormalBrick5 53" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 684 )
+
+[node name="NormalBrick5 16" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 376 )
+solid = true
+
+[node name="NormalBrick5 23" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 332 )
+solid = true
+
+[node name="NormalBrick5 24" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 288 )
+solid = true
+
+[node name="NormalBrick5 25" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 244 )
+
+[node name="NormalBrick5 32" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 244 )
+
+[node name="NormalBrick5 46" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 508 )
+
+[node name="NormalBrick5 56" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 508 )
+
+[node name="NormalBrick5 61" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 508 )
+
+[node name="NormalBrick5 51" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 508 )
+
+[node name="NormalBrick5 33" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 288 )
+
+[node name="NormalBrick5 38" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 288 )
+
+[node name="NormalBrick5 47" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 552 )
+
+[node name="NormalBrick5 57" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 552 )
+
+[node name="NormalBrick5 63" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 552 )
+
+[node name="NormalBrick5 52" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 552 )
+
+[node name="NormalBrick5 34" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 332 )
+
+[node name="NormalBrick5 36" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 332 )
+
+[node name="NormalBrick5 44" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 596 )
+
+[node name="NormalBrick5 54" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 596 )
+
+[node name="NormalBrick5 59" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 596 )
+
+[node name="NormalBrick5 49" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 596 )
+
+[node name="NormalBrick5 39" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 244 )
+solid = true
+
+[node name="NormalBrick5 35" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 376 )
+
+[node name="NormalBrick5 37" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 376 )
+
+[node name="NormalBrick5 45" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 256, 640 )
+
+[node name="NormalBrick5 55" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 464, 640 )
+
+[node name="NormalBrick5 60" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 568, 640 )
+
+[node name="NormalBrick5 50" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 152, 640 )
+
+[node name="NormalBrick7 18" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 420 )
+solid = true
+
+[node name="NormalBrick7 31" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 508 )
+solid = true
+
+[node name="NormalBrick7 24" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 552 )
+solid = true
+
+[node name="NormalBrick7 25" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 596 )
+solid = true
+
+[node name="NormalBrick7 32" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 640 )
+solid = true
+
+[node name="NormalBrick7 36" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 684 )
+solid = true
+
+[node name="NormalBrick7 16" parent="Game/Bricks" instance=ExtResource( 4 )]
+position = Vector2( 360, 464 )
+solid = true
+
+[node name="Balls" type="Node2D" parent="Game"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Drops" type="Node2D" parent="Game"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Lasers" type="Node2D" parent="Game"]
+
+[node name="Paddle" parent="Game" instance=ExtResource( 5 )]
+position = Vector2( 360, 1184 )
+
+[node name="Pause" parent="." instance=ExtResource( 6 )]
+editor/display_folded = true
+
+[node name="UI" parent="Pause" index="1"]
+editor/display_folded = true
+
+[node name="LevelName" parent="Pause/UI/Hub" index="0"]
+text = "S2L5"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+
+[editable path="Pause"]

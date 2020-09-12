@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/themes/costarica_52.theme" type="Theme" id=1]
+[ext_resource path="res://scripts/settings.gd" type="Script" id=2]
+[ext_resource path="res://scenes/hud/menu/reset.tscn" type="PackedScene" id=3]
+
+[node name="Settings" type="Control"]
+margin_right = 32.0
+margin_bottom = 32.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Settings" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sound" type="Button" parent="Settings"]
+margin_left = 16.0
+margin_top = 304.0
+margin_right = 704.0
+margin_bottom = 416.0
+focus_neighbour_bottom = NodePath("../Achievements")
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_SOUND_ON"
+
+[node name="Music" type="Button" parent="Settings"]
+margin_left = 16.0
+margin_top = 432.0
+margin_right = 704.0
+margin_bottom = 544.0
+focus_neighbour_bottom = NodePath("../Achievements")
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_MUSIC_ON"
+
+[node name="Language" type="Button" parent="Settings"]
+margin_left = 16.0
+margin_top = 560.0
+margin_right = 704.0
+margin_bottom = 672.0
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_ENGLISH"
+
+[node name="Reset" type="Button" parent="Settings"]
+margin_left = 16.0
+margin_top = 688.0
+margin_right = 704.0
+margin_bottom = 800.0
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_RESET"
+
+[node name="EditControl" type="Button" parent="Settings"]
+margin_left = 16.0
+margin_top = 816.0
+margin_right = 704.0
+margin_bottom = 928.0
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "CONTROL: TOUCHSCREEN"
+
+[node name="Apply" type="Button" parent="Settings"]
+margin_left = 16.0
+margin_top = 944.0
+margin_right = 704.0
+margin_bottom = 1056.0
+focus_neighbour_top = NodePath("../Options")
+focus_mode = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+enabled_focus_mode = 0
+text = "KEY_APPLY"
+
+[node name="Reset" parent="." instance=ExtResource( 3 )]
+margin_top = 352.0
+margin_bottom = 816.0
+

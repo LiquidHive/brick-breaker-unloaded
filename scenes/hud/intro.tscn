@@ -1,0 +1,120 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/intro.gd" type="Script" id=1]
+[ext_resource path="res://assets/graphics/backgrounds/background.png" type="Texture" id=2]
+[ext_resource path="res://assets/graphics/splash_screen/new_logo_scale.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/costa_rica.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/graphics/masks/white_mask.png" type="Texture" id=5]
+[ext_resource path="res://assets/animations/intro.tres" type="Animation" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 72
+font_data = ExtResource( 4 )
+
+[node name="Intro" type="Control"]
+margin_right = 46.0
+margin_bottom = 46.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+script = ExtResource( 1 )
+__meta__ = {
+"__editor_plugin_screen__": "2D",
+"_edit_horizontal_guides_": [ 640.0, 256.0, 848.0, 544.0 ],
+"_edit_lock_": true,
+"_edit_vertical_guides_": [ 360.01 ]
+}
+
+[node name="Background" type="TextureRect" parent="."]
+self_modulate = Color( 0.765625, 0.765625, 0.765625, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 720.0
+margin_right = 1954.0
+margin_bottom = 674.0
+rect_rotation = 90.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+texture = ExtResource( 2 )
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Logo" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 144.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 642.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LogoCentre" type="TextureRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 430.0
+margin_top = 150.0
+margin_right = 804.0
+margin_bottom = 520.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Title" type="Label" parent="."]
+margin_top = 736.0
+margin_right = 720.0
+margin_bottom = 848.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 1 )
+text = "LiquidHive"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 360, 640 )
+rotation = 1.5708
+texture = ExtResource( 5 )
+energy = 0.2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Blind" type="TextureRect" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 720.0
+margin_right = 1954.0
+margin_bottom = 674.0
+rect_rotation = 90.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Intro"
+anims/Intro = ExtResource( 6 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true

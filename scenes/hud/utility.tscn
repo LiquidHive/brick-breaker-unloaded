@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/utility.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/costarica_52.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/audio/musics/game_main_music.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/audio/sounds/click.wav" type="AudioStream" id=4]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="UI" type="Control" parent="."]
+visible = false
+show_behind_parent = true
+margin_right = 48.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Frames" type="Label" parent="UI"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 1104.0
+margin_top = 64.0
+margin_right = 1200.0
+margin_bottom = 128.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.0865936, 0.886719, 0.0865936, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "00"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -6.0
+bus = "Music"
+
+[node name="SoundFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -6.0
+bus = "SoundFX"
+
+[node name="ScrollFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -6.0
+bus = "SoundFX"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
